@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Étape 3 - Tableau d'objets</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Étape 3 — Insertion à partir d'un tableau d'objets</h1>
+      <form id="person-form">
+        <label for="nom">Nom:</label>
+        <input id="nom" name="nom" type="text" required />
+        <label for="prenom">Prénom:</label>
+        <input id="prenom" name="prenom" type="text" required />
+        <label for="points">Points:</label>
+        <input id="points" name="points" type="number" min="0" step="any" required />
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">N°</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Prénom</th>
+            <th scope="col">Points</th>
+            <th scope="col">Select</th>
+          </tr>
+        </thead>
+        <tbody id="person-table-body"></tbody>
+      </table>
+      <div class="actions">
+        <button class="action-btn" type="submit" form="person-form">Ajouter</button>
+        <button id="console-btn" class="action-btn" type="button">Console Tableau</button>
+      </div>
+      <p id="message" aria-live="polite"></p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

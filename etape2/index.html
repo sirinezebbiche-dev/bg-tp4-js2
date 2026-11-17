@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Étape 2 - Insertion d'une ligne</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Étape 2 — Insertion d'une nouvelle ligne</h1>
+      <form id="person-form">
+        <label for="numero">N°:</label>
+        <input id="numero" name="numero" type="number" min="1" required />
+        <label for="nom">Nom:</label>
+        <input id="nom" name="nom" type="text" required />
+        <label for="prenom">Prénom:</label>
+        <input id="prenom" name="prenom" type="text" required />
+        <label for="points">Points:</label>
+        <input id="points" name="points" type="number" min="0" step="any" required />
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">N°</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Prénom</th>
+            <th scope="col">Points</th>
+            <th scope="col">Select</th>
+          </tr>
+        </thead>
+        <tbody id="person-table-body">
+          <tr><td>1</td><td>Nom1</td><td>Prénom1</td><td>5</td><td><input type="checkbox" aria-label="Sélectionner Nom1" /></td></tr>
+          <tr><td>2</td><td>Nom2</td><td>Prénom2</td><td>5</td><td><input type="checkbox" aria-label="Sélectionner Nom2" /></td></tr>
+          <tr><td>3</td><td>Nom3</td><td>Prénom3</td><td>5</td><td><input type="checkbox" aria-label="Sélectionner Nom3" /></td></tr>
+        </tbody>
+      </table>
+      <button class="add-btn" type="submit" form="person-form">Ajouter</button>
+      <p id="message" aria-live="polite"></p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
